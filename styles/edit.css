@@ -1,0 +1,100 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.body{
+       
+    height: 505px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 40px;
+    align-items: center;
+
+   
+ }
+ 
+
+ .principal{
+    border: 1px solid #828282;
+   display: flex;
+   padding-left: 30px;
+   flex-direction: column;
+   text-align:left ;
+   width: 550px;
+   height: 440px;
+   border-radius: 10px;
+   font-family: Arial, Helvetica, sans-serif;
+   padding-top: 30px;
+   
+   
+   }
+   
+.emcabezado{
+display: flex;
+justify-content: space-between;
+width: 80%;
+}
+
+.logout{
+display: flex;
+gap: 10px   ;
+}
+
+.form{
+display: flex;
+flex-direction: column;
+padding-top: 20px;
+
+}
+
+#back{
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+   
+.foto{
+    display: flex;
+        gap: 20px;
+        align-items: center;
+}
+
+.conteinerInputs{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px; 
+    row-gap: 10px;
+    padding-bottom: 10px;
+    font-size: 0.7rem;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+         
+}
+.input{
+    width: 300px;
+    height: 20px;
+    border-radius: 10px;
+    padding-left: 10px;
+    border: 1px solid #828282;
+    font-size: 0.6rem;
+}
+.inputBio{
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    padding-left: 10px;
+    border: 1px solid #828282;
+    font-size: 0.6rem;
+}
+#boton{
+    width: 60px;
+    height:25px ;
+    background-color:   #2F80ED;
+    border-radius: 5px;
+    border: 1px solid #2F80ED ;
+    color: white;
+    cursor: pointer;
+}
