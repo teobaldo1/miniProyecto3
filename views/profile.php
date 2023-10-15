@@ -25,13 +25,7 @@ if (!isset($_SESSION["user"])) {
             <div class="logout">
                 <div style="height: 30px;"><img src="<?= $_SESSION["user"]["Photo"] ?>" style="width:40px; border-radius:5 ;pxobject-fit: cover;width:100%; height:100%;"></div>
                 <span><?= $_SESSION["user"]["Name"] ?></span>
-                
-                <select name=" selectUsuario" id="select">
-                <option value="1"></option>
-                <option value="1"><a href="./config/logout.php">My profile</a></option>
-                <option value="1"><a href="/config/logout.php">Logout</a></option>
-                </select>
-                       
+                <a href="/config/logout.php">Logout</a>                      
             </div>
         </div>
 
