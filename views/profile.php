@@ -20,7 +20,7 @@ if (!isset($_SESSION["user"])) {
     <div class="conteiner">
         <div class="emcabezado">
             <div class="marca">
-                <img src="/public/assets/devchallenges.svg" alt="imagen" width="80px">
+                <img src="/public/assets/devchallenges.svg" alt="devchallenges" width="80px">
             </div>
             <div class="logout">
                 <div style="height: 30px;"><img src="<?= $_SESSION["user"]["Photo"] ?>" style="width:40px; border-radius:5 ;pxobject-fit: cover;width:100%; height:100%;"></div>
