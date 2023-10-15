@@ -13,6 +13,7 @@ if (!isset($_SESSION["user"])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="/styles/profile.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
     <title>Document</title>
 </head>
 
@@ -25,7 +26,10 @@ if (!isset($_SESSION["user"])) {
             <div class="logout">
                 <div style="height: 30px;"><img src="<?= $_SESSION["user"]["Photo"] ?>" style="width:40px; border-radius:5 ;pxobject-fit: cover;width:100%; height:100%;"></div>
                 <span><?= $_SESSION["user"]["Name"] ?></span>
-                <a href="/config/logout.php">Logout</a>                      
+                <span class="material-symbols-outlined">
+                    exit_to_app
+                </span>
+                <a href="/config/logout.php">Logout</a>
             </div>
         </div>
 
@@ -49,7 +53,7 @@ if (!isset($_SESSION["user"])) {
                                 <small>Some info may be visible to other people</small>
                             </div>
 
-                            <button  id="buttom" type="submit">Edit</button>
+                            <button id="buttom" type="submit">Edit</button>
 
                         </div>
                         <div class="info">
@@ -64,17 +68,17 @@ if (!isset($_SESSION["user"])) {
                             <label class="items">BIO</label>
                             <input class="input" type="text" value="<?= $_SESSION["user"]["Bio"] ?>">
                         </div>
-                        <div class="info"> 
+                        <div class="info">
                             <label class="items">PHONE</label>
                             <input class="input" type="text" value="<?= $_SESSION["user"]["Phone"] ?>">
                         </div>
-                        <div class="info"> 
+                        <div class="info">
                             <label class="items">EMAIL</label>
-                            <input  class="input" type="text" value="<?= $_SESSION["user"]["Email"] ?>">
+                            <input class="input" type="text" value="<?= $_SESSION["user"]["Email"] ?>">
                         </div>
                         <div class="pass">
                             <label class="items">PASSWORD</label>
-                            <input  class="input" type="text">
+                            <input class="input" type="text">
                         </div>
                     </div>
                 </form>

@@ -23,16 +23,19 @@ session_start();
         <div class="logout">
             <div style="height: 30px;"><img src="<?= $_SESSION["user"]["Photo"] ?>" style="width:40px; border-radius:5 ;pxobject-fit: cover;width:100%; height:100%;"></div>
             <span><?= $_SESSION["user"]["Name"] ?></span>
+            <span class="material-symbols-outlined">
+                exit_to_app
+            </span>
             <a href="/config/logout.php">Logout</a>
         </div>
     </div>
 
     <div class="conteiner">
-         <div id="back">
-          <a href="/views/profile.php"> <span class="material-symbols-outlined">
-arrow_back_ios_new
-</span></a><span>Back</span>
-</div>
+        <div id="back">
+            <a href="/views/profile.php"> <span class="material-symbols-outlined">
+                    arrow_back_ios_new
+                </span></a><span>Back</span>
+        </div>
 
         <div class="principal">
             <div>
@@ -55,7 +58,7 @@ arrow_back_ios_new
                         <input type="text" class="input" placeholder="Enter your name" value="<?= $_SESSION["user"]["Name"] ?>" name="textName">
                     </div>
 
-                    <div class="inputs" >
+                    <div class="inputs">
                         <label>Bio</label>
                         <input type="text" class="inputBio" placeholder="Enter your bio" value="<?= $_SESSION["user"]["Bio"] ?>" name="textBio">
                     </div>
@@ -63,7 +66,7 @@ arrow_back_ios_new
                     <div class="inputs">
                         <label>Phone</label>
                         <input type="text" class="input" placeholder="Enter your phone" value="<?= $_SESSION["user"]["Phone"] ?>" name="textPhone">
-                    </div >
+                    </div>
                     <div class="inputs">
                         <label>Email</label>
                         <input type="text" class="input" placeholder="Enter your email" value="<?= $_SESSION["user"]["Email"] ?>" name="textEmail">
@@ -71,7 +74,7 @@ arrow_back_ios_new
 
                     <div class="inputs">
                         <label>Password</label>
-                        <input type="text"  class="input" placeholder="Enter your password" value="<?= $_SESSION["user"]["Contrasena"] ?>" name="textPassword">
+                        <input type="text" class="input" placeholder="Enter your password" value="<?= $_SESSION["user"]["Contrasena"] ?>" name="textPassword">
                     </div>
                 </div>
                 <button id="boton" type="submit">Save</button>
